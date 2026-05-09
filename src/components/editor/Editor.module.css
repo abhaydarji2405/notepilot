@@ -1,0 +1,64 @@
+.editorWrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  background: var(--editor-bg);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.lineNumbers {
+  flex-shrink: 0;
+  width: 52px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 16px 10px 16px 0;
+  background: var(--editor-bg);
+  border-right: 1px solid var(--border-color);
+  user-select: none;
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.lineNumbers::-webkit-scrollbar { display: none; }
+
+.lineNum {
+  display: block;
+  color: var(--line-number-color);
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 23.8px;
+}
+
+.textarea {
+  flex: 1;
+  resize: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  padding: 16px 20px;
+  line-height: 1.7;
+  font-size: 14px;
+  font-family: inherit;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  caret-color: #7c3aed;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .editorWrapper { font-size: 13px; }
+  .lineNumbers { width: 40px; padding-right: 8px; }
+  .textarea { padding: 12px 14px; }
+}

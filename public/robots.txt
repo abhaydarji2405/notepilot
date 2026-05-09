@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notepilot.abhaydarji.com/sitemap.xml
