@@ -1,4 +1,4 @@
-## NotePilot
+## NotePilot Project
 
 # Getting Started with Create React App
 
